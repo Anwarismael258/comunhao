@@ -1,0 +1,37 @@
+name: comunhao
+description: Comunhao mobile for members and church communities.
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  comunhao_shared:
+    path: ../../packages/comunhao_shared
+  supabase_flutter: ^2.16.0
+  intl: ^0.20.3
+  image_picker: ^1.1.2
+  file_picker: ^10.3.3
+  mobile_scanner: ^7.0.1
+  shared_preferences: ^2.5.5
+  url_launcher: ^6.3.1
+  video_player: ^2.9.2
+  visibility_detector: ^0.4.0+2
+  firebase_core: ^4.12.1
+  firebase_messaging: ^16.4.3
+  google_fonts: ^6.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/branding/comunhao.png
