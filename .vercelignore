@@ -1,0 +1,15 @@
+apps/
+packages/
+supabase/
+third_party/
+tools/
+docs/
+logs/
+comunhaoassets/
+.appdata/
+.toolhome/
+dist/
+.dart_tool/
+build/
+*.apk
+*.aab
