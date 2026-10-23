@@ -1,0 +1,34 @@
+name: comunhao_igreja
+description: App for pastors and church administrators on Comunhao.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  supabase_flutter: ^2.16.0
+  qr_flutter: ^4.1.0
+  image_picker: ^1.1.2
+  file_picker: ^10.3.3
+  shared_preferences: ^2.5.5
+  comunhao_shared:
+    path: ../../packages/comunhao_shared
+  video_player: ^2.9.2
+  firebase_core: ^4.12.1
+  firebase_messaging: ^16.4.3
+  google_fonts: ^6.3.2
+  url_launcher: ^6.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/branding/comunhao.png

@@ -1,0 +1,105 @@
+{
+  "project_info": {
+    "project_number": "12765576072",
+    "project_id": "deligo-triunfal-lda",
+    "storage_bucket": "deligo-triunfal-lda.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12765576072:android:7f70e76a88006826d0583d",
+        "android_client_info": {
+          "package_name": "comunhao.igrejas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMrvquynaVelo7mTQeJY9OeLtlj15fdQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12765576072:android:1454d6894aaf941ad0583d",
+        "android_client_info": {
+          "package_name": "comunhao.membros"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMrvquynaVelo7mTQeJY9OeLtlj15fdQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12765576072:android:eff93d94a6d4ca5dd0583d",
+        "android_client_info": {
+          "package_name": "deligo.delivery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMrvquynaVelo7mTQeJY9OeLtlj15fdQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12765576072:android:61671ca881946b66d0583d",
+        "android_client_info": {
+          "package_name": "sarca.driver"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMrvquynaVelo7mTQeJY9OeLtlj15fdQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12765576072:android:f411ec9f00ed806bd0583d",
+        "android_client_info": {
+          "package_name": "sarca.rider"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMrvquynaVelo7mTQeJY9OeLtlj15fdQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
