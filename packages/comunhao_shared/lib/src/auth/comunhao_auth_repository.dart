@@ -113,7 +113,7 @@ class SupabaseComunhaoAuthRepository implements ComunhaoAuthRepository {
     required String token,
   }) async {
     await _client.rpc(
-      'verify_phone_auth_otp',
+      'verify_phone_auth_otp_v2',
       params: {
         'p_phone': phone,
         'p_token': token,
