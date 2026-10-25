@@ -124,6 +124,7 @@ class ChurchApplication {
   Map<String, dynamic> toWriteMap() {
     return {
       'church_name': churchName.trim(),
+      'pastor_profile_id': pastorProfileId,
       'city': city.trim(),
       'province': _nullableText(province),
       'country': country.trim().isEmpty ? 'Mozambique' : country.trim(),
