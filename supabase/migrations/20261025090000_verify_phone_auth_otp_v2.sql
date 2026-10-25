@@ -30,7 +30,7 @@ security definer
 set search_path = public, comunhao, auth, extensions
 as $$
 begin
-  return public.verify_phone_auth_otp(p_phone, p_token);
+  return comunhao.verify_phone_auth_otp(p_phone, p_token);
 end;
 $$;
 
