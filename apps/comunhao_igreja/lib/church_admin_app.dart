@@ -1520,7 +1520,7 @@ class _ChurchAdminAppState extends State<ChurchAdminApp>
     try {
       final draft = ChurchApplication(
         id: createNew ? null : current.id,
-        pastorProfileId: _currentUser!.id,
+        pastorProfileId: _currentUserId!,
         churchName: _churchNameController.text.trim(),
         city: _cityController.text.trim(),
         province: _provinceController.text.trim().isEmpty
