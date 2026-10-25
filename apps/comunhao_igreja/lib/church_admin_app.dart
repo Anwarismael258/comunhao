@@ -1472,6 +1472,18 @@ class _ChurchAdminAppState extends State<ChurchAdminApp>
       if (!mounted) {
         return;
       }
+      if (error is AuthException && error.code == 'phone_password_required') {
+        _loginPhoneController.text = _pendingPhone!;
+        setState(() {
+          _authMode = _AuthMode.login;
+          _authStage = _AuthStage.credentials;
+          _otpController.clear();
+        });
+        _showMessage(
+          'Numero confirmado. Entra agora com a palavra-passe da conta para continuar.',
+        );
+        return;
+      }
       _showMessage(_friendlyError(error));
     } finally {
       if (mounted) {
