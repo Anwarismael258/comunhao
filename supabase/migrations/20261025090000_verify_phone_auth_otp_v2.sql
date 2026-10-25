@@ -29,8 +29,28 @@ language plpgsql
 security definer
 set search_path = public, comunhao, auth, extensions
 as $$
+declare
+  result jsonb;
+  uid uuid;
+  normalized text;
 begin
-  return comunhao.verify_phone_auth_otp(p_phone, p_token);
+  result := comunhao.verify_phone_auth_otp(p_phone, p_token);
+  uid := nullif(result->>'user_id', '')::uuid;
+  normalized := public.normalize_phone_auth_number(p_phone);
+  if uid is not null then
+    update auth.users
+    set phone = normalized,
+        phone_confirmed_at = coalesce(phone_confirmed_at, now()),
+        updated_at = now()
+    where id = uid;
+    update auth.identities
+    set provider_id = normalized,
+        identity_data = coalesce(identity_data, '{}'::jsonb)
+          || jsonb_build_object('phone', normalized, 'phone_verified', true),
+        updated_at = now()
+    where user_id = uid and provider = 'phone';
+  end if;
+  return result;
 end;
 $$;
 
